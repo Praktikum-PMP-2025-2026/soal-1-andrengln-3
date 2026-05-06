@@ -9,11 +9,11 @@ typedef struct pasien{
     struct pasien* next;
 } pasien;
 
-typedef struct Queue{
+typedef struct queue{
     int CurrSize;
     pasien* front;
     pasien* rear;
-} Queue;
+} queue;
 
 pasien* newPasien(int id) {
     pasien* pasien = (pasien*)malloc(sizeof(pasien));
@@ -23,15 +23,15 @@ pasien* newPasien(int id) {
 }
 
 queue* createQueue(unsigned capacity) {
-    queue* pasien = (pasien*)malloc(sizeof(pasien));
+    queue* queue = (queue*)malloc(sizeof(queue));
     queue->capacity = capacity;
-    queue->front = pasien->size = 0;
+    queue->front = queue->size = 0;
     queue->rear = capacity - 1;
     queue->array = (int*)malloc(queue->capacity * sizeof(int));
     return queue;
 }
 
-void enqueue(Queue* q, int waktu) {
+void enqueue(queue* q, int waktu) {
     pasien* pasien = newpasien(data);
     if (isEmpty(q)) {
         q->front = q->rear = pasien;
