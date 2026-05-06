@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <Stdlib.h>
-#include <String.h>
+#include <stdlib.h>
+#include <string.h>
 
 
 typedef struct pasien{
