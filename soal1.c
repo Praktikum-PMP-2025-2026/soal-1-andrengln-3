@@ -15,11 +15,11 @@ typedef struct Queue{
     pasien* rear;
 } Queue;
 
-Pasien* newPasien(int id) {
-    Pasien* Pasien = (Pasien*)malloc(sizeof(Pasien));
-    Pasien->data = data;
-    Pasien->next = NULL;
-    return Pasien;
+pasien* newPasien(int id) {
+    pasien* pasien = (pasien*)malloc(sizeof(pasien));
+    pasien->data = data;
+    pasien->next = NULL;
+    return pasien;
 }
 
 queue* createQueue(unsigned capacity) {
@@ -47,7 +47,7 @@ int main(){
     int n;
     printf("");
     scanf("%d", n);
-    Pasien* queue = CreateQueue(n)
+    pasien* queue = CreateQueue(n)
 
 
 
